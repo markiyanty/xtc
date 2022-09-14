@@ -1,17 +1,16 @@
 
 import React from 'react';
-import { Nav, Container, Row} from 'react-bootstrap';
+import { Nav, Container, Row, Button} from 'react-bootstrap';
 import apple from '../images/apple.png'
 import google from '../images/google.png'
 import visa from '../images/visa.png'
 import master from '../images/master.png'
 import '../css/index.css';
+import Agreement from './Agreement';
 
 const Info = () => {
     return (
-        <div className="fixed-bottom">
-  
-     
+        <div className="footer">
        <Container>
        <Row>
        <Nav className="justify-content-center">
@@ -53,9 +52,7 @@ const Info = () => {
       </Row>
       <Row>
       <Nav className="justify-content-center" >
-       <Nav.Item>
-       <Nav.Link href="#link"><h4 className="linkText">User Agreement</h4></Nav.Link>
-        </Nav.Item>
+      <Button className=""  onClick={()=>{return(<Agreement></Agreement>)}}>User Agreement</Button>
             <Nav.Item href="/home" >
             <Nav.Link href="#link"><h4 className="linkText">Delivery</h4></Nav.Link>
         </Nav.Item>

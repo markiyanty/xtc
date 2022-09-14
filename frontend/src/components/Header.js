@@ -14,7 +14,7 @@ const Header = () => {
             <img
               alt=""
               src={logo} 
-              width="40"
+              width="45"
               height="40"
               className=""
               responsive/>{' '}

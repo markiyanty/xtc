@@ -7,9 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.nav-link {
- 
-}
 .linkText{  font-size: medium;
   color: #090924 !important;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+.Button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
