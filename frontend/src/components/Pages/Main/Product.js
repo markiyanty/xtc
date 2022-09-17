@@ -1,8 +1,8 @@
 import React from "react";
 import { Carousel, Card, Container, Col,  Button } from "react-bootstrap";
-import shirt1 from '../images/shirt1.png';
-import shirt2 from '../images/shirt2.png';
-import shirt3 from '../images/shirt3.png'
+import shirt1 from '../../../images/shirt1.png';
+import shirt2 from '../../../images/shirt2.png';
+import shirt3 from '../../../images/shirt3.png'
 
 const Product = () =>{
     return(

@@ -1,41 +1,27 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Col, Container, Row, Button } from 'react-bootstrap';
-import Agreement from './components/Agreement';
-import Header from './components/Header';
-import Info from './components/Info';
-import Product from './components/Product';
-import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from './components/Pages/Cart/Cart';
+import Home from './components/Pages/Main/Home';
+import Profile from './components/Pages/Profile/Profile';
+
+
 
 
 
 function App() {
-  const [show, setShow] = useState(false);
+  
 
   return (
     <div className="App">
       
-    <Header/>
-    
-    <Container className='mt-4 mb-4 ' style={{
-        width: '45%', height: '55%'
-      }}>
-      <Col >
-      <Row >
-      <Product/>
-      </Row>
-      <Row>
-      <Product/>
-      </Row>
-      </Col>
-  
-    </Container>
-    { show && 
-
-      <Agreement />
-
-    }
-   
-    <Info />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}>
+          <Route path="profile" element={<Profile/>} />
+          <Route path="cart" element={<Cart/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }

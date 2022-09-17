@@ -1,14 +1,19 @@
 
 import React from 'react';
-import { Nav, Container, Row, Button} from 'react-bootstrap';
-import apple from '../images/apple.png'
-import google from '../images/google.png'
-import visa from '../images/visa.png'
-import master from '../images/master.png'
-import '../css/index.css';
-import Agreement from './Agreement';
+import { Nav, Container, Row} from 'react-bootstrap';
+import apple from '../../images/apple.png'
+import google from '../../images/google.png'
+import visa from '../../images/visa.png'
+import master from '../../images/master.png'
+import '../../css/index.css';
+import Agreement from '../InfoTabs/PrivacyPolicies';
+import Delivery from '../InfoTabs/Delivery';
+import Contacts from '../InfoTabs/Contacts';
+import Responses from '../InfoTabs/Responses';
+
 
 const Info = () => {
+  
     return (
         <div className="footer">
        <Container>
@@ -52,26 +57,23 @@ const Info = () => {
       </Row>
       <Row>
       <Nav className="justify-content-center" >
-      <Button className=""  onClick={()=>{return(<Agreement></Agreement>)}}>User Agreement</Button>
-            <Nav.Item href="/home" >
-            <Nav.Link href="#link"><h4 className="linkText">Delivery</h4></Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-        <Nav.Link href="#link"><h4 className="linkText">Contacts</h4></Nav.Link>
-        </Nav.Item>
-            <Nav.Item>
-            <Nav.Link href="#link"><h4 className="linkText">Responses</h4></Nav.Link>
-        </Nav.Item>
+      <Agreement/>
+      <Delivery/>
+      <Contacts/>
+      <Responses/>
       </Nav>
      
       </Row>
-  
+
     </Container>
+ 
         </div>
      
-       
+    
           
      );
+     
+    
 }
 
 export default Info;

@@ -16,8 +16,9 @@ footer {
     position: fixed;
     bottom: 0;
 }
-.Button {
+.button  {
   border: none;
   background-color: transparent;
   outline: none;
+  text-transform: unset !important;
 }
